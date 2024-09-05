@@ -69,3 +69,17 @@ class BIRD extends obj{
     }
 
 }
+
+class cano extends obj{
+    move(velocidade, limite, pos, pipe2){
+        this.px -= velocidade
+
+        if(this.px <= limite){
+            this.px = pos
+
+            this.py = Math.random()* 600
+        }
+
+        pipe2.py = pipe1.py
+    }
+}
